@@ -31,13 +31,20 @@ app.get('/', (req, res) => {
   // res.send('<h1>Hello Express!</h1>');
   res.render('home.hbs', {
     pageTitle: 'Home',
-    user: 'Mary-Blessed'
+    user: 'Mary-Blessing'
   });
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About'
+  });
+});
+
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'Portfolio',
+    user: 'Mary-Blessing'
   });
 });
 
